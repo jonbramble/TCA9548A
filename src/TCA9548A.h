@@ -1,7 +1,7 @@
 /*   Version: 1.1.3 |  License: Apache 2.0  |  Author: JDWifWaf@gmail.com   */
 
 #ifndef TCA9548A_H
-#define TCA9548A_h
+#define TCA9548A_H
 
 #include <Arduino.h>
 #include <Wire.h>
