@@ -21,7 +21,7 @@ class TCA9548A
     public:
         TCA9548A(uint8_t address = 0x70);  // Default IC Address
 
-        void begin(SafeWire &inWire = Wire); // Default TwoWire Instance
+        void begin(SafeTwoWire &inWire = Wire); // Default TwoWire Instance
         void openChannel(uint8_t channel);
         void closeChannel(uint8_t channel);
         void writeRegister(uint8_t value);
@@ -31,7 +31,7 @@ class TCA9548A
         
     protected:
     private:
-        SafeWire *myWire;
+        SafeTwoWire *myWire;
         uint8_t _address;
         uint8_t _channels;
 
