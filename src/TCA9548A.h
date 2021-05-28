@@ -4,7 +4,7 @@
 #define TCA9548A_H
 
 #include <Arduino.h>
-#include <Wire.h>
+#include <SafeWire.h>
 
 /* Channel hex values for writeRegister() function */
 #define TCA_CHANNEL_0 0x1
