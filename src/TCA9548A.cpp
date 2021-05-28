@@ -5,7 +5,7 @@
 
 TCA9548A::TCA9548A(uint8_t address) : _address(address) {}
 
-void TCA9548A::begin(TwoWire &inWire)
+void TCA9548A::begin(SafeWire &inWire)
 {
     this->myWire = &inWire;
     this->myWire->begin();
